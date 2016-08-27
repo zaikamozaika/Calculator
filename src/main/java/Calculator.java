@@ -1,7 +1,7 @@
 /**
  * Created by Администратор on 08.08.16.
  */
-public class Calculator {
+class Calculator {
 
 
         private int result;
@@ -12,19 +12,19 @@ public class Calculator {
         }
 
         /*Sum of two integer arguments saved in result variable*/
-        public void add(int firstArg, int secondArg){
+        private void add(int firstArg, int secondArg){
             this.result= firstArg+secondArg;
         }
         /*Difference betwenn first and second integer arguments saved in result variable*/
-        public void subtract(int firstArg, int secondArg){
+        private void subtract(int firstArg, int secondArg){
             this.result= firstArg-secondArg;
         }
         /*Product of two integer arguments saved in result variable*/
-        public void multiply(int firstArg, int secondArg){
+        private void multiply(int firstArg, int secondArg){
             this.result= firstArg*secondArg;
         }
         /*Quotient of first integer argument divided by second integer argument saved in result variable*/
-        public void divide(int firstArg, int secondArg){
+        private void divide(int firstArg, int secondArg){
             this.result= firstArg/secondArg;
         }
 
@@ -33,7 +33,7 @@ public class Calculator {
           Available operations are Add, Subtract, Division, Multiply.
           Wrong  parameter causes system.out message, result saved from previous operation
         */
-        public void calculate(int firstArg, int secondArg, char operation){
+        void calculate(int firstArg, int secondArg, char operation){
             switch(operation){
                 case '+':	add(firstArg, secondArg);
                     break;
